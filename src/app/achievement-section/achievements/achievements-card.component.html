@@ -1,0 +1,21 @@
+<div [ngClass]="{'dark-mode': isDarkMode}" class="certificate-card">
+<div class="certificate-image-div">
+  <img [src]="cardInfo.image" [alt]="cardInfo.imageAlt" class="card-image">
+</div>
+<div class="certificate-detail-div">
+  <h5 [ngClass]="{'dark-mode': isDarkMode}" class="card-title">
+    {{cardInfo.title}}
+  </h5>
+  <p [ngClass]="{'dark-mode': isDarkMode}" class="card-subtitle">
+  {{cardInfo.subtitle}}
+  </p>
+</div>
+<div class="certificate-card-footer">
+  <div *ngFor="let v of cardInfo.footerLink">
+     <span [ngClass]="{'dark-mode': isDarkMode}" class="certificate-tag"
+           (click)="openUrlInNewTab(v.url, v.name)">
+  {{v.name}}
+  </span>
+  </div>
+</div>
+</div>

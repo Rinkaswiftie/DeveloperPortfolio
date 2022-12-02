@@ -1,0 +1,24 @@
+<div class="scroll-snap">
+  <app-header></app-header>
+  <app-introduction id="hello" *ngIf="information.introduction.display"></app-introduction>
+</div>
+<div class="scroll-snap wow bounceInUp"  *ngIf="information.skillsSection.display">
+  <app-skills id="about-me"></app-skills>
+</div>
+<div class="scroll-snap" *ngIf="information.skillsSection.display">
+  <app-software-skills id="skills" ></app-software-skills>
+</div>
+<div class="scroll-snap" *ngIf="information.myJourney.display">
+  <app-work-experience id="journey" ></app-work-experience>
+</div>
+<div class="scroll-snap" *ngIf="information.openSource.display">
+  <app-passion-projects id="projects" ></app-passion-projects>
+</div>
+<div class="scroll-snap">
+  <app-achievement-section id="achievements" *ngIf="information.achievementSection.display"></app-achievement-section>
+  <div class="footer-div">
+    <p class="footer-text" [ngClass]="{'dark-mode': isDarkMode}">
+      Made with ❤️ by Rinka
+    </p>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="main" id="achievements" *ngIf="achievementSection.display">
+  <div class="achievement-main-div">
+    <div class="achievement-header">
+      <h1 [ngClass]="{'dark-mode': isDarkMode}"
+        class="heading achievement-heading">
+      {{achievementSection.title}}
+      </h1>
+      <p [ngClass]="{'dark-mode': isDarkMode}"
+        class="subTitle achievement-subtitle">
+      {{achievementSection.subtitle}}
+      </p>
+    </div>
+    <div class="achievement-cards-div">
+      <div *ngFor="let achievement of achievementSection.achievementsCards">
+        <app-achievement [isDarkMode]="isDarkMode" [cardInfo]='achievement'></app-achievement>
+      </div>
+    </div>
+  </div>
+</div>

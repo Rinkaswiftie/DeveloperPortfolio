@@ -1,0 +1,21 @@
+<div class="main" [ngClass]="{'dark-mode':isDark}" id="skills">
+  <div class="skills-main-div">
+    <div class="skills-image-div">
+      <img alt="avatar" [src]="skills.softwareSkillsImage">
+    </div>
+    <div class="skills-text-div">
+      <h1 class="skills-heading" [ngClass]="{'dark-mode':isDark}">
+        {{skills.softwareSkillsHeader}}
+      </h1>
+      <div class="software-skills-main-div">
+        <ul class="dev-icons">
+          <li *ngFor="let skill of softwareSkills" class="software-skill-inline">
+            <img [src]="skill.badgeURL" [alt]="skill.skillName">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+</div>

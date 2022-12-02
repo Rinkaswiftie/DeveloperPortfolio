@@ -1,0 +1,9 @@
+<div class="main" id="opensource" *ngIf="passionProjects.display">
+  <h1 class="project-title">Open Source Projects</h1>
+  <div class="repo-cards-div-main">
+    <div *ngFor="let project of repo">
+      <app-project [repo]='project'></app-project>
+    </div>
+  </div>
+  <app-button text="More Projects" className="project-button" [link]="socialMediaLinks.github"></app-button>
+</div>

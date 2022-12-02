@@ -1,0 +1,43 @@
+@import "src/styles.scss";
+
+.social-media-div {
+  font-size: 2em;
+}
+
+.icon-button {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: $buttonColor;
+}
+
+.icon-button i {
+  color: $buttonColor;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2.6rem;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in;
+}
+
+/* Hover Transition */
+i:hover {
+  background-color: $buttonHover;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .social-media-div {
+    text-align: center;
+  }
+}

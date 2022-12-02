@@ -1,0 +1,166 @@
+@import "src/styles.scss";
+
+.main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+}
+.greet-main {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+.greeting-main {
+  display: flex;
+}
+
+.greeting-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+.button-greeting-div {
+  display: flex;
+  margin-top: 20px;
+}
+
+.greeting-text {
+  font-size: 40px;
+  line-height: 1.1;
+  color: $textColor;
+}
+
+.css-typing p {
+  font-family: 'JetBrains Mono', monospace;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing p:nth-child(1) {
+  width: 9.5em;
+  -webkit-animation: type 2s steps(40, end);
+  animation: type 2s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.css-typing p:nth-child(2)
+{  width: 6em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(20, end), blink .5s step-end infinite alternate;
+  animation: type2 2s steps(20, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.greeting-text-p {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.greeting-image-div > img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .greeting-text {
+    font-size: 40px;
+  }
+  .greeting-text-p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .button-greeting-div {
+    justify-content: space-around;
+  }
+  .greeting-text {
+    font-size: 30px;
+    text-align: center;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+  .greeting-main {
+    display: block;
+  }
+  .greeting-image-div {
+    height: 256px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main {
+    width: auto;
+  }
+}

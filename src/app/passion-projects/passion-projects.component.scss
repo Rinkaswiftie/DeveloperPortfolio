@@ -1,0 +1,43 @@
+@import "src/styles.scss";
+
+.project-title {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.startup-project-text img {
+  max-width: 100%;
+  height: auto;
+}
+
+.repo-cards-div-main {
+  font-family: 'JetBrains Mono', monospace;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem 1rem;
+}
+
+
+.main{
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .project-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .repo-cards-div-main {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

@@ -1,0 +1,68 @@
+@import "src/styles.scss";
+
+.dark-mode {
+  background-color: $darkBackground;
+  color: $textColorDark !important;
+  transition: "0.1s";
+}
+
+.scroll-container{
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-snap{
+  margin-top: 10vw;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .scroll-snap{
+    height: auto;
+    width: auto;
+    scroll-snap-align: start;
+  }
+}
+
+//:host ::ng-deep .mat-tab-header{
+//  top: 0;
+//  z-index: 1000;
+//  background: $lightBackground1;
+//  position: sticky;
+//  position: -webkit-sticky; /* macOS/iOS Safari */
+//}
+//
+//:host ::ng-deep .mat-tab-header .dark-mode {
+//  background-color: $darkBackground !important;
+//  color: $textColorDark !important;
+//  transition: "0.1s";
+//}
+//
+//:host ::ng-deep .mat-tab-label-content {
+//  color: $subTitle;
+//}
+//
+//:host ::ng-deep .mat-tab-label-content .dark-mode {
+//  color: $textColorDark;
+//}
+
+.footer-text {
+  text-align: center;
+  color: $subTitle !important;
+}
+
+.dark-mode {
+  color: $textColorDark !important;
+}
+.dark-menu{
+  color: $textColorDark !important;
+}
+
+
+.footer-div {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+

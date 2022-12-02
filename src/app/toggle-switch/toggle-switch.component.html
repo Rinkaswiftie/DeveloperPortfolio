@@ -1,0 +1,10 @@
+<label class="switch">
+  <input
+    type="checkbox"
+    [checked]="isDark"
+    (change)= "changeState()"
+  >
+  <span class="slider round">
+        <span class="emoji">{{isChecked ? "🌜" : "☀️"}}</span>
+      </span>
+</label>
